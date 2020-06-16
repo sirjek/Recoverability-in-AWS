@@ -1,5 +1,9 @@
-The minimum RTO for a single AZ outage is two minutes
-The minimum RTO for a single region outage is two minutes
-The minimum RPO for a single AZ outage is two minutes
-The minimum RPO for a single region outage is two minutes
- 
+On the basis of a selected config of: 100 gb db, backup every 24 hours, response time 15 minutes; The Recovery time objective (RTO) or recovery point objective (RPO) numbers are as follows:
+
+1) Min RTO for single AZ outage is 45 minutes (response time of support 15 minutes + backup retention period 30 minutes )
+
+2) Min RTO for single region outage is 1 hour (response time of support 15 minutes + backup retention and promotion of replica is 45 minutes )
+
+3) Min RPO for single AZ outage - several minutes
+
+4) Min RPO or single region outage - 24 hours (as backup is on a daily basis ie.every 24 hours)
